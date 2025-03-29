@@ -3236,7 +3236,7 @@ input, select, textarea {
 	background-color: #212931;
 	background-image: 
 		url("../../images/overlay.png"), 
-		linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
+		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
 		url("../../images/1.jpg");
 	background-size: auto, auto, 100% auto;
 	background-position: center, center, center -80px;
@@ -3280,7 +3280,8 @@ input, select, textarea {
 
 		@media screen and (orientation: portrait) {
     #wrapper > .bg {
-        background-size: cover, auto, auto 175%; /* Asegura que se cubra en modo retrato */
+        background-size: auto, auto, contain; /* Cambia a 'contain' para asegurar que toda la imagen sea visible */
+        background-position: center, center, center center; /* Centra la imagen completamente */
     }
 }
 /* Intro */
