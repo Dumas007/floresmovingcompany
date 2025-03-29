@@ -3278,10 +3278,10 @@ input, select, textarea {
 			opacity: 1;
 		}
 
-		@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait) {
     #wrapper > .bg {
-        background-size: auto, auto, contain; /* Cambia a 'contain' para asegurar que toda la imagen sea visible */
-        background-position: center, center, center center; /* Centra la imagen completamente */
+        background-size: auto, auto, 100% auto; /* Ancho completo, alto automático (o viceversa) */
+        background-position: center, center, top center; /* Ajusta según necesites */
     }
 }
 /* Intro */
